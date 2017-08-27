@@ -16,6 +16,10 @@ function generateGrid(number) {
     divsToAppend += '<div class="square" style="width: ' + dimension + 'px; height: ' + dimension + 'px;" />';
   }
   $('#grid').append(divsToAppend);
+
+  $('.square').on("mouseover", function() {
+    this.classList.add("mouseEnter");
+  });
 }
 
 function clearGrid() {
@@ -24,9 +28,6 @@ function clearGrid() {
 }
 
 $(document).ready(function() {
-  $('.square').on("mouseenter", function() {
-    this.classList.add("mouseEnter");
-  });
 
   generateGrid(12);
 
@@ -37,4 +38,5 @@ $(document).ready(function() {
       generateGrid(input);
     }
   });
+
 });
