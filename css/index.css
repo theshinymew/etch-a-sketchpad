@@ -2,17 +2,23 @@
   width: 960px;
   height: 960px;
   margin: 5px;
+  display: inline-block;
 }
 
 .square {
-  display: inline-block;
-  height: 25%;
-  width: 25%;
-  margin-right: -6px;
-  margin-bottom: -6px;
   border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.full {
+.mouseEnter {
   background-color: black;
+}
+
+.mouseLeave {
+  background-color: white;
+}
+
+button {
+  float: right;
 }
